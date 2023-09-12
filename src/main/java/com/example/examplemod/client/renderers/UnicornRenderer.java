@@ -14,13 +14,12 @@ public class UnicornRenderer extends MobRenderer<Unicorn, UnicornModel<Unicorn>>
 
     // Constructor
     public UnicornRenderer(EntityRendererProvider.Context context) {
-        super(context, new UnicornModel<>(context.bakeLayer(UnicornModel.UNICORN_MODEL_RESOURCE)), 0.75F);
+        super(context, new UnicornModel<>(context.bakeLayer(UnicornModel.UNICORN_MODEL_LAYER)), 0.75F);
     }
 
     // This method is used to tell Minecraft which texture to use for our unicorn.
     @Override
     public ResourceLocation getTextureLocation(Unicorn unicorn) {
-        // Return the default horse texture for our unicorn
         return UNICORN_TEXTURE;
     }
 }
